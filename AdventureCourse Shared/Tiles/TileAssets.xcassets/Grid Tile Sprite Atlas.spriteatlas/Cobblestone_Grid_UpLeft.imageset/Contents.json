@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Cobblestone_Grid_UpLeft.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
