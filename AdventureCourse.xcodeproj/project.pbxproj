@@ -22,6 +22,7 @@
 				Stage/Character.swift,
 				Stage/Item.swift,
 				Stage/Physics.swift,
+				Stage/Platforms.swift,
 				Stage/Villain.swift,
 				Tiles/GroundTileSet.sks,
 				Tiles/TileAssets.xcassets,
@@ -38,6 +39,7 @@
 				Stage/Character.swift,
 				Stage/Item.swift,
 				Stage/Physics.swift,
+				Stage/Platforms.swift,
 				Stage/Villain.swift,
 				Tiles/GroundTileSet.sks,
 				Tiles/TileAssets.xcassets,
@@ -304,7 +306,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "uaa.litc.adventure-course";
 				PRODUCT_NAME = AdventureCourse;
@@ -332,7 +334,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "uaa.litc.adventure-course";
 				PRODUCT_NAME = AdventureCourse;

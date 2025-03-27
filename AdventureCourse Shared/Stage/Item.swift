@@ -11,12 +11,16 @@ class Item: SKSpriteNode {
     func setup() {
         self.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: self.size.width, height: self.size.height))
         // El tipo de entidad fisica al que ´Item´ pertenece
-        physicsBody?.categoryBitMask = bitMask.item.rawValue
+        physicsBody?.categoryBitMask = BitMask.item.rawValue
         // Para detectar si el personaje lo toca o lo aplasta.
-        physicsBody?.contactTestBitMask = bitMask.character.rawValue | bitMask.crusher.rawValue
+        physicsBody?.contactTestBitMask = BitMask.character.rawValue | BitMask.crusher.rawValue
         // Para detectar colisiones con otros items o TODO: El Mapa.
-        physicsBody?.collisionBitMask = bitMask.item.rawValue
+        physicsBody?.collisionBitMask = BitMask.item.rawValue
         physicsBody?.allowsRotation = false
-        physicsBody?.affectedByGravity = true
+        physicsBody?.affectedByGravity = false
+    }
+    func isCollected() {
+        self.physicsBody = nil
+        self.alpha = 0
     }
 }
