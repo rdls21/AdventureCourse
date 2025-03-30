@@ -33,6 +33,8 @@ class GameScene: SKScene {
             gatheredPoints += 15
             label?.text = String("Puntos: \(gatheredPoints)")
         case "EndMark":
+            // MARK: Fin del Juego.
+            // Mostrar un mensaje final dependiendo de los puntos recolectados.
             character.die()
             // Hacer una suma de los puntos que tenemos para mostrar un mensaje personalizado.
             if gatheredPoints < 20 {
@@ -61,8 +63,6 @@ class GameScene: SKScene {
     fileprivate var platforms: Platforms?
     /// Variable para mostrar el sistema de puntos dentro del GameScene
     fileprivate var label: SKLabelNode?
-    /// Variable para configurar la bandera del GameScene
-    fileprivate var endFlag: Item!
     // Función para crear un nuevo escenario de juego
     class func newGameScene() -> GameScene {
         // Load 'GameScene.sks' as an SKScene.
@@ -109,6 +109,10 @@ class GameScene: SKScene {
             item.setup()
             // Aca adentro se encuentra la bandera de finalizacion
         }
+        // Configuramos los items animables
+        //items.filter({ $0.name == "Nombre del Item Animable" }).first!.setupWith(
+        //  folder: "", frames: [""])
+        
     }
     
     // Ciclo de renderizado del juego
